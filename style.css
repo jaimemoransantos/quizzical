@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Karla';
+}
+
+body{
+    height: 100%;
+    margin: 0;
+}
+
+h1{
+    font-size: 32px;
+    margin: 0;
+}
+
+h3{
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+html{
+    height: 100vh;
+}
+
+.menuContainer{
+    height: 100vh;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F5F7FB;
+}
+
+.topBlob{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.infoContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}
+
+.startButton{
+    width: 193px;
+    height: 52px;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 15px;
+    background-color: #4D5B9E;
+    color: #F5F7FB;
+    cursor: pointer;
+}
+.startButton:focus{
+    outline: none;
+}
+
+.bottomBlob{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.question{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.masterContainer{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.questionsContainer{
+    position: absolute;
+    width: 80vw;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
+}
+
+.optionsContainer{
+    display: flex;
+    gap: 12px;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 0.8px solid #DBDEF0
+}
+
+.option{
+    padding: 5px 10px;
+    border: 1px solid #4D5B9E;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.selected{
+    border: 1px solid #D6DBF5;
+    background-color: #D6DBF5;
+}
+
+.checkButtonContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkButton{
+    padding: 10px 15px;
+    background-color: #4D5B9E;
+    width: fit-content;
+    color: #F5F7FB;
+    border-radius: 8px;
+}
+
+.playAgainButton{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+
+.error{
+    border: 1px solid #F8BCBC;
+    background-color: #F8BCBC;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.correct{
+    border: 1px solid #94D7A2;
+    background-color: #94D7A2;
+    color: #293264;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}

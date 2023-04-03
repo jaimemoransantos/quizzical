@@ -45,10 +45,10 @@ export default function App(){
 
     console.log()
     return(
-        <>
+        <div>
             <div className="menuContainer">
                 {!playing && 
-                        <>
+                        <div>
                             <div className="topBlob">    
                                 <img src="./images/blob2.png"/>
                             </div>
@@ -66,7 +66,7 @@ export default function App(){
                             <div className="bottomBlob">
                                 <img src="./images/blob1.png"/>
                             </div>
-                        </>
+                        </div>
                 }
                 {playing && <div className="masterContainer">
                         <div className="topBlob">    
@@ -112,6 +112,6 @@ export default function App(){
                 }
             
             </div>
-        </>
+        </div>
     )
 }
